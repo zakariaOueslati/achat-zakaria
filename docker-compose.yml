@@ -13,7 +13,7 @@ services:
       - db:/var/lib/mysql
 
   app-achat:
-    image: zakariaouesl20/achat-devops:1.0.0
+    image: zakariaoues20/achat-devops:1.0.0
     restart: on-failure
     ports:
       - "8082:8082"
