@@ -9,9 +9,7 @@ services:
       MYSQL_DATABASE: achatdb
     ports:
       - "3306:3306"
-    volumes:
-      - db:/var/lib/mysql
-
+   
   app-achat:
     image: zakariaoues20/achat-devops:1.0.0
     restart: always
@@ -29,6 +27,3 @@ services:
       }'
     stdin_open: true
     tty: true
-
-volumes:
-  db:
